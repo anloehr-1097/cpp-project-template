@@ -15,3 +15,6 @@ run:
 
 install:
 	cmake --install build
+
+test:
+	cd build && ctest -VV

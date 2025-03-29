@@ -24,7 +24,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 # export compile commands
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-# set install prefix
+# set install prefix for 'install' command
 set(CMAKE_INSTALL_PREFIX "/Users/Andy/Code/cpp-project-template")
 
 # --- add custom library ---
@@ -33,7 +33,7 @@ add_subdirectory(MyLib)
 # link custom library to executable
 target_link_libraries(project_name PUBLIC MyLib)
 
-# --- install ---
+# --- install (optional) ---
 # install executable to bin directory
 install(TARGETS project_name DESTINATION bin)
 # install header file to include directory
@@ -41,5 +41,8 @@ install(FILES "${PROJECT_BINARY_DIR}/project-nameConfig.h"
   DESTINATION ${PROJECT_SOURCE_DIR}/include
   )
 
-message(${PROJECT_BINARY_DIR})
-message(${PROJECT_SOURCE_DIR})
+# --- testing ---
+enable_testing()  # enable testing for this project
+add_test(NAME Runs-no-problem COMMAND project_name)  # check if executable runs (does not fail)
+
+
