@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include "lib_module.h"
-#include "project-nameConfig.h"
+#include "include/lib_module.h"
+#include "include/project-nameConfig.h"
 
 int main(int argc, char *argv[]) {
     std::cout << "Hello, World!" << std::endl;
