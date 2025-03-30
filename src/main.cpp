@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include "include/lib_module.h"
-#include "include/project-nameConfig.h"
+#include "MyLib/lib_module.h"
+#include "project-nameConfig.h"
 #include <fmt/core.h>
 
 int main(int argc, char *argv[]) {
