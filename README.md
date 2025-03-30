@@ -3,6 +3,8 @@ This repo serves as a template for a CMake based C++ project.
 The project is built using CMake and the build system is Make. 
 It follows a simple diretory structure depcited below:
 
+*Note:* This is a template repository and as such, designed to be used via the 'Use this template' button on the GitHub page.
+
 ```
 root
 ├── CMakeLists.txt
@@ -65,8 +67,6 @@ make test_gtest
 ```bash
 make install
 ```
-
-
 
 # TODO
 [ ] set env variables like build type
