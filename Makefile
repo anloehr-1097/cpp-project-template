@@ -18,3 +18,6 @@ install:
 
 test:
 	cd build/src && ctest -VV
+
+test_gtest:
+	cd build/tests && ctest -VV

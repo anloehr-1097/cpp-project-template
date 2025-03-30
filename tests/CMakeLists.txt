@@ -13,6 +13,8 @@ target_link_libraries(cust_test PRIVATE
   GTest::gtest_main
   MyLib)
 
-add_test(cust_test_gtests cust_test)
-
+# add_test(cust_test_gtests cust_test)  # add test to run manually
 include(GoogleTest)
+gtest_discover_tests(cust_test)  # instead of adding manually, let discover
+
+# navigate to build directory for tests and run 'ctest' to run all tests
