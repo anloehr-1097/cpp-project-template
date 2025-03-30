@@ -37,7 +37,8 @@ target_link_libraries(project_name PRIVATE MyLib)
 find_package(fmt CONFIG REQUIRED)
 # link fmt library to executable
 target_link_libraries(project_name PRIVATE fmt::fmt)
-target_include_directories(project_name PRIVATE /usr/local/include)
+# include fmt header files (optional, should not be necessary with find_package)
+# target_include_directories(project_name PRIVATE /usr/local/include)
 
 # --- install (optional) ---
 # install executable to bin directory
