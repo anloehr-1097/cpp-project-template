@@ -22,3 +22,5 @@ set(CMAKE_INSTALL_PREFIX "/Users/Andy/Code/cpp-project-template")
 
 
 add_subdirectory(src)
+add_subdirectory(tests)
+
